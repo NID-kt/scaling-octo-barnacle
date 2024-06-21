@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6560071369563174139}
   - component: {fileID: 3048874279716947337}
   m_Layer: 0
-  m_Name: "\u7DBA\u7F85\u306B\u3089"
+  m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 7a44a93fbdecf40b6a27dd9fda9db7b5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e887b7a0af1304bd8b09d5496f24027e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -144,7 +144,7 @@ GameObject:
   - component: {fileID: 1956237163464765728}
   - component: {fileID: 1702540979101246654}
   m_Layer: 0
-  m_Name: Ball
+  m_Name: "ACA\u306D\u3055\u3093 (CDJ)"
   m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -260,4 +260,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   renderer: {fileID: 1259842728288761404}
   isTouch: 0
-  color: 0
+  color: 5

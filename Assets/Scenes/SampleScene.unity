@@ -702,7 +702,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efb92f8eb5f144a1583374ce212916a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ballObj: {fileID: 7433095523955625179, guid: 3d60841946e97426599540b7b4157550, type: 3}
+  balls:
+  - {fileID: 7433095523955625179, guid: d8a9744e62f4546c891da3f778082b49, type: 3}
+  - {fileID: 7433095523955625179, guid: 797ae4014e0f343b285676f8ffef0517, type: 3}
+  - {fileID: 7433095523955625179, guid: 2e897c1480cc24e9f88d0aa938ec3127, type: 3}
 --- !u!4 &1227828639
 Transform:
   m_ObjectHideFlags: 0

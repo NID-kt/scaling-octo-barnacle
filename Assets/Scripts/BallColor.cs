@@ -5,4 +5,8 @@ public enum BallColor
     Green = 2,
     Purple = 3,
     Bomb = 4,
+    
+    ACAねさん_CDJ_,
+    ACAねさん,
+    しょがすと,
 }

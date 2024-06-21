@@ -31,24 +31,24 @@ public class BallObject : MonoBehaviour
 
     private void ChangeColor()
     {
-        switch (color)
-        {
-            case BallColor.Red:
-                renderer.material.SetColor("_Color", Color.red);
-                break;
-            case BallColor.Blue:
-                renderer.material.SetColor("_Color", Color.blue);
-                break;
-            case BallColor.Green:
-                renderer.material.SetColor("_Color", Color.green);
-                break;
-            case BallColor.Purple:
-                renderer.material.SetColor("_Color", new Color(1, 0, 1));
-                break;
-            case BallColor.Bomb:
-                renderer.material.SetColor("_Color", new Color(0, 0, 0));
-                break;
-        }
+        // switch (color)
+        // {
+        //     case BallColor.Red:
+        //         renderer.material.SetColor("_Color", Color.red);
+        //         break;
+        //     case BallColor.Blue:
+        //         renderer.material.SetColor("_Color", Color.blue);
+        //         break;
+        //     case BallColor.Green:
+        //         renderer.material.SetColor("_Color", Color.green);
+        //         break;
+        //     case BallColor.Purple:
+        //         renderer.material.SetColor("_Color", new Color(1, 0, 1));
+        //         break;
+        //     case BallColor.Bomb:
+        //         renderer.material.SetColor("_Color", new Color(0, 0, 0));
+        //         break;
+        // }
     }
 
     public void Explosion(GameObject deleteEffect, ScoreManager scoreManager)
