@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class BallGenerator : MonoBehaviour
@@ -7,6 +8,7 @@ public class BallGenerator : MonoBehaviour
     // public GameObject ballObj;
     public List<GameObject> balls;
 
+    private int[] _ballIndexes;
     private int count = 0;
     private int generateCount = 0;
     const int MAX_COUNT = 30;
@@ -14,6 +16,10 @@ public class BallGenerator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        _ballIndexes = Enumerable.Range(0, balls.Count)
+            .OrderBy(_ => Random.value)
+            .ToArray();
+
         Application.targetFrameRate = 60;
     }
 
@@ -27,7 +33,8 @@ public class BallGenerator : MonoBehaviour
             generateCount++;
             generateCount %= 10;
 
-            var ball = balls[Random.Range(0, balls.Count)];
+            var ball = balls[_ballIndexes[Random.Range(0, 4)]];
+            // var ball = balls[Random.Range(0, balls.Count)];
             var gameObject = Instantiate(ball, transform);
             // gameObject.transform.parent = this.transform;
             gameObject.transform.localPosition = Vector3.zero;
